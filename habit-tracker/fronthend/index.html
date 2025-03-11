@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Suivi des habitudes</h1>
+
+    <!-- Formulaire pour créer un utilisateur -->
+    <h2>Créer un utilisateur</h2>
+    <form id="user-form">
+      <input type="text" id="name" placeholder="Nom" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Mot de passe" required />
+      <button type="submit"><i class="fas fa-user-plus"></i> Créer l'utilisateur</button>
+    </form>
+
+    <!-- Formulaire pour ajouter une habitude -->
+    <h2>Ajouter une habitude</h2>
+    <form id="habit-form">
+      <input type="text" id="habit-name" placeholder="Nom de l'habitude" required />
+      <input type="text" id="habit-frequency" placeholder="Fréquence (ex : quotidienne)" required />
+      <button type="submit"><i class="fas fa-user-plus"></i>Ajouter l'habitudes</button>
+
+    </form>
+
+    <!-- Formulaire pour enregistrer un progrès -->
+    <h2>Enregistrer un progrès</h2>
+    <form id="progress-form">
+      <input type="number" id="habit-id" placeholder="ID de l'habitude" required />
+      <input type="checkbox" id="completed" /> Complété
+      <input type="date" id="progress-date" required />
+      <button type="submit"><i class="fas fa-user-plus"></i> Enregistrer le progrés</button>
+
+    </form>
+
+    <div id="message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
