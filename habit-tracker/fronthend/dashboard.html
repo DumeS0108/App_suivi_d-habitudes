@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord - Habit Tracker</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Tableau de Bord</h1>
+        <canvas id="habitChart"></canvas>
+
+        <h2>📅 Mes Habitudes</h2>
+        <ul id="habitList">
+            <li>✔️ Faire du sport - <span>3/7 jours</span></li>
+            <li>❌ Lire 30 minutes - <span>1/7 jours</span></li>
+            <li>✔️ Boire 2L d'eau - <span>5/7 jours</span></li>
+        </ul>
+
+        <button onclick="window.location.href='habits.html'">➕ Ajouter une Habitude</button>
+    </div>
+
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
